@@ -34,3 +34,8 @@ services:
         sync: false
       - key: VITE_OPENAI_VECTOR_STORE_TRANSLATE_RAG
         sync: false
+      - key: VITE_OPENAI_VECTOR_STORE_EDUNOTES
+        sync: false
+      - key: VITE_OPENAI_VECTOR_STORE_ECWV
+        sync: false
+
