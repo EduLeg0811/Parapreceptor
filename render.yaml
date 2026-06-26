@@ -1,0 +1,36 @@
+services:
+  - type: web
+    name: parapreceptor-backend
+    runtime: python
+    plan: starter
+    rootDir: BACKEND
+    buildCommand: pip install -r requirements.txt && python backend/python/build_lexical_index.py
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.11
+      - key: SERVER_PORT
+        value: 8787
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: PDF2DOCX_PYTHON_CMD
+        value: python
+      - key: FRONTEND_ORIGIN
+        sync: false
+
+  - type: web
+    name: parapreceptor-frontend
+    runtime: static
+    rootDir: FRONTEND
+    buildCommand: npm ci && npm run build
+    staticPublishPath: dist
+    envVars:
+      - key: VITE_API_BASE_URL
+        sync: false
+      - key: VITE_OPENAI_VECTOR_STORES
+        sync: false
+      - key: VITE_OPENAI_VECTOR_STORE_LO
+        sync: false
+      - key: VITE_OPENAI_VECTOR_STORE_TRANSLATE_RAG
+        sync: false

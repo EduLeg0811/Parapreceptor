@@ -1,0 +1,44 @@
+{
+  "index_label": "HSR",
+  "source_file": "backend/Files/Lexical/HSR.xlsx",
+  "source_rows": 8407,
+  "indexed_rows": 12904,
+  "sheet_name": "Sheet1",
+  "text_column": "text",
+  "metadata_columns": [
+    "title",
+    "number",
+    "pagina"
+  ],
+  "model": "text-embedding-3-small",
+  "embedding_dtype": "float16",
+  "dimensions": 1536,
+  "generated_at": "2026-04-17T15:29:03Z",
+  "normalization": "l2",
+  "source_mtime": "2026-04-07T00:13:51.000Z",
+  "source_size": 1383026,
+  "recommended_min_score": 0.68,
+  "score_calibration": {
+    "version": 1,
+    "method": "random_pair_p99_plus_margin",
+    "margin": 0.02,
+    "seed": 0,
+    "samplePairs": 5000,
+    "rows": 12904,
+    "meanSimilarity": 0.453981876373291,
+    "p95Similarity": 0.5983822345733643,
+    "p99Similarity": 0.6552908420562744,
+    "p999Similarity": 0.723287045955658,
+    "maxSimilarity": 0.8024665117263794,
+    "calibratedAt": "2026-04-17T15:29:03Z"
+  },
+  "rebuild_basis": "source_file",
+  "chunking": {
+    "version": 1,
+    "strategy": "structural_sentence_rechunk",
+    "targetChars": 280,
+    "maxChars": 420,
+    "minChars": 110,
+    "rebuiltFromRows": 8407
+  }
+}

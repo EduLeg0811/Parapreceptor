@@ -1,0 +1,44 @@
+{
+  "index_label": "PROEXIS",
+  "source_file": "backend/Files/Lexical/PROEXIS.xlsx",
+  "source_rows": 750,
+  "indexed_rows": 870,
+  "sheet_name": "Sheet1",
+  "text_column": "text",
+  "metadata_columns": [
+    "title",
+    "number",
+    "pagina"
+  ],
+  "model": "text-embedding-3-small",
+  "embedding_dtype": "float16",
+  "dimensions": 1536,
+  "generated_at": "2026-04-17T15:59:27Z",
+  "normalization": "l2",
+  "source_mtime": "2026-04-06T23:12:47.000Z",
+  "source_size": 99520,
+  "recommended_min_score": 0.76,
+  "score_calibration": {
+    "version": 1,
+    "method": "random_pair_p99_plus_margin",
+    "margin": 0.02,
+    "seed": 0,
+    "samplePairs": 1738,
+    "rows": 870,
+    "meanSimilarity": 0.5510401129722595,
+    "p95Similarity": 0.6744574904441833,
+    "p99Similarity": 0.7365782856941223,
+    "p999Similarity": 0.7707258462905884,
+    "maxSimilarity": 0.7768113017082214,
+    "calibratedAt": "2026-04-17T15:59:27Z"
+  },
+  "rebuild_basis": "source_file",
+  "chunking": {
+    "version": 1,
+    "strategy": "structural_sentence_rechunk",
+    "targetChars": 280,
+    "maxChars": 420,
+    "minChars": 110,
+    "rebuiltFromRows": 750
+  }
+}

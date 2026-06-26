@@ -1,0 +1,44 @@
+{
+  "index_label": "PROJ",
+  "source_file": "backend/Files/Lexical/PROJ.xlsx",
+  "source_rows": 8985,
+  "indexed_rows": 14686,
+  "sheet_name": "Sheet1",
+  "text_column": "text",
+  "metadata_columns": [
+    "title",
+    "number",
+    "pagina"
+  ],
+  "model": "text-embedding-3-small",
+  "embedding_dtype": "float16",
+  "dimensions": 1536,
+  "generated_at": "2026-04-17T14:51:30Z",
+  "normalization": "l2",
+  "source_mtime": "2026-04-07T00:16:19.000Z",
+  "source_size": 1666516,
+  "recommended_min_score": 0.69,
+  "score_calibration": {
+    "version": 1,
+    "method": "random_pair_p99_plus_margin",
+    "margin": 0.02,
+    "seed": 0,
+    "samplePairs": 5000,
+    "rows": 14686,
+    "meanSimilarity": 0.46870362758636475,
+    "p95Similarity": 0.6157076954841614,
+    "p99Similarity": 0.6679603457450867,
+    "p999Similarity": 0.7213254570960999,
+    "maxSimilarity": 0.7462440729141235,
+    "calibratedAt": "2026-04-17T14:51:30Z"
+  },
+  "rebuild_basis": "source_file",
+  "chunking": {
+    "version": 1,
+    "strategy": "structural_sentence_rechunk",
+    "targetChars": 280,
+    "maxChars": 420,
+    "minChars": 110,
+    "rebuiltFromRows": 8985
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "index_label": "TEMAS",
+  "source_file": "backend/Files/Lexical/TEMAS.xlsx",
+  "source_rows": 721,
+  "indexed_rows": 1257,
+  "sheet_name": "Sheet1",
+  "text_column": "text",
+  "metadata_columns": [
+    "title",
+    "number",
+    "pagina"
+  ],
+  "model": "text-embedding-3-small",
+  "embedding_dtype": "float16",
+  "dimensions": 1536,
+  "generated_at": "2026-04-17T15:58:32Z",
+  "normalization": "l2",
+  "source_mtime": "2026-04-06T23:13:37.000Z",
+  "source_size": 146892,
+  "recommended_min_score": 0.75,
+  "score_calibration": {
+    "version": 1,
+    "method": "random_pair_p99_plus_margin",
+    "margin": 0.02,
+    "seed": 0,
+    "samplePairs": 2513,
+    "rows": 1257,
+    "meanSimilarity": 0.49191129207611084,
+    "p95Similarity": 0.6308567523956299,
+    "p99Similarity": 0.7204371094703674,
+    "p999Similarity": 0.8138665556907654,
+    "maxSimilarity": 0.8589013814926147,
+    "calibratedAt": "2026-04-17T15:58:32Z"
+  },
+  "rebuild_basis": "source_file",
+  "chunking": {
+    "version": 1,
+    "strategy": "structural_sentence_rechunk",
+    "targetChars": 280,
+    "maxChars": 420,
+    "minChars": 110,
+    "rebuiltFromRows": 721
+  }
+}

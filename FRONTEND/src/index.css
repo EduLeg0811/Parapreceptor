@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 16% 96%;
+    --foreground: 220 20% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 10%;
+
+    --primary: 215 80% 48%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 14% 92%;
+    --secondary-foreground: 220 20% 10%;
+
+    --muted: 220 14% 92%;
+    --muted-foreground: 220 10% 46%;
+
+    --accent: 200 70% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 87%;
+    --input: 220 13% 87%;
+    --ring: 215 80% 48%;
+
+    --radius: 0.5rem;
+
+    --panel-bg: 0 0% 100%;
+    --panel-header: 220 16% 97%;
+    --stat-value: 215 80% 48%;
+    --success: 152 60% 40%;
+    --warning: 38 92% 50%;
+
+    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  }
+
+  .dark {
+    --background: 220 18% 12%;
+    --foreground: 210 20% 96%;
+    --card: 220 16% 14%;
+    --card-foreground: 210 20% 96%;
+    --popover: 220 16% 14%;
+    --popover-foreground: 210 20% 96%;
+    --primary: 215 80% 58%;
+    --primary-foreground: 220 20% 10%;
+    --secondary: 220 14% 20%;
+    --secondary-foreground: 210 20% 96%;
+    --muted: 220 14% 20%;
+    --muted-foreground: 220 12% 70%;
+    --accent: 200 70% 55%;
+    --accent-foreground: 220 20% 10%;
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 14% 28%;
+    --input: 220 14% 28%;
+    --ring: 215 80% 58%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: var(--font-sans);
+  }
+
+  code,
+  pre,
+  kbd,
+  samp {
+    font-family: var(--font-mono);
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: hsl(var(--muted-foreground) / 0.3) transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: hsl(var(--muted-foreground) / 0.3);
+    border-radius: 3px;
+  }
+}
+
+.doc-editor-root .ProseMirror {
+  font-size: var(--doc-font-size, 15px);
+  line-height: var(--doc-line-height, 1.6);
+}
+
+.ProseMirror p {
+  margin: 0 0 0.7em;
+}
+
+.ProseMirror ul,
+.ProseMirror ol {
+  /* Ajuste de listas compactas no editor: 0.05em reduz o espacamento vertical ao minimo visual sem colar as linhas; 1.05 define altura de linha minima legivel para itens de lista. */
+  margin: 0.05em 0 0.05em 1.25em;
+  list-style: revert;
+  line-height: 1.2;
+}
+
+.ProseMirror li {
+  margin: 0.05em 0;
+  line-height: 1.2;
+}
+
+.ProseMirror p.manual-tight-list-item {
+  margin: 0.05em 0;
+  line-height: 1.2;
+}
+
+.ProseMirror p.tight-list-intro {
+  margin-bottom: 0.05em;
+}
+
+.ProseMirror mark {
+  border-radius: 0.2rem;
+  padding: 0 0.1rem;
+}
+
+
+

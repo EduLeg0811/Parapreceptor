@@ -1,0 +1,45 @@
+{
+  "index_label": "MINI-ARLINDO",
+  "source_file": "backend/Files/Source/arlindo_mini_records.json",
+  "source_rows": 780,
+  "indexed_rows": 16041,
+  "sheet_name": "",
+  "text_column": "text",
+  "metadata_columns": [
+    "title",
+    "date",
+    "number",
+    "cm",
+    "quest",
+    "pens"
+  ],
+  "model": "text-embedding-3-small",
+  "embedding_dtype": "float16",
+  "dimensions": 1536,
+  "generated_at": "2026-05-07T19:37:58Z",
+  "normalization": "l2",
+  "recommended_min_score": 0.78,
+  "rebuild_basis": "source_json",
+  "chunking": {
+    "version": 1,
+    "strategy": "structural_sentence_rechunk",
+    "targetChars": 280,
+    "maxChars": 420,
+    "minChars": 110,
+    "rebuiltFromRows": 780
+  },
+  "score_calibration": {
+    "version": 1,
+    "method": "random_pair_p99_plus_margin",
+    "margin": 0.02,
+    "seed": 0,
+    "samplePairs": 5000,
+    "rows": 16041,
+    "meanSimilarity": 0.6264114379882812,
+    "p95Similarity": 0.7189435958862305,
+    "p99Similarity": 0.7523521780967712,
+    "p999Similarity": 0.7793793678283691,
+    "maxSimilarity": 0.9761136770248413,
+    "calibratedAt": "2026-05-07T19:37:58Z"
+  }
+}

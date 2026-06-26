@@ -1,0 +1,36 @@
+# Python / Backend
+BACKEND/.venv/
+BACKEND/venv/
+BACKEND/env/
+BACKEND/server-data/
+BACKEND/.lexical_index.pkl
+**/__pycache__/
+**/*.py[cod]
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+
+# JS / Frontend
+FRONTEND/node_modules/
+FRONTEND/dist/
+FRONTEND/dist-ssr/
+
+# Local Environment Variables & Secrets
+**/.env
+**/.env.local
+**/*.local
+
+# Logs
+**/*.log
+logs
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

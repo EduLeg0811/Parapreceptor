@@ -1,0 +1,44 @@
+{
+  "index_label": "TNP",
+  "source_file": "backend/Files/Lexical/TNP.xlsx",
+  "source_rows": 340,
+  "indexed_rows": 536,
+  "sheet_name": "Sheet1",
+  "text_column": "text",
+  "metadata_columns": [
+    "title",
+    "number",
+    "pagina"
+  ],
+  "model": "text-embedding-3-small",
+  "embedding_dtype": "float16",
+  "dimensions": 1536,
+  "generated_at": "2026-04-17T15:59:59Z",
+  "normalization": "l2",
+  "source_mtime": "2026-04-06T23:14:31.000Z",
+  "source_size": 66062,
+  "recommended_min_score": 0.77,
+  "score_calibration": {
+    "version": 1,
+    "method": "random_pair_p99_plus_margin",
+    "margin": 0.02,
+    "seed": 0,
+    "samplePairs": 1071,
+    "rows": 536,
+    "meanSimilarity": 0.5250291228294373,
+    "p95Similarity": 0.6692822575569153,
+    "p99Similarity": 0.7425001859664917,
+    "p999Similarity": 0.835126519203186,
+    "maxSimilarity": 0.8406473994255066,
+    "calibratedAt": "2026-04-17T15:59:59Z"
+  },
+  "rebuild_basis": "source_file",
+  "chunking": {
+    "version": 1,
+    "strategy": "structural_sentence_rechunk",
+    "targetChars": 280,
+    "maxChars": 420,
+    "minChars": 110,
+    "rebuiltFromRows": 340
+  }
+}

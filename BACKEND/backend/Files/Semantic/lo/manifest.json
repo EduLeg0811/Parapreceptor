@@ -1,0 +1,44 @@
+{
+  "index_label": "LO",
+  "source_file": "backend/Files/Lexical/LO.xlsx",
+  "source_rows": 25187,
+  "indexed_rows": 26544,
+  "sheet_name": "Sheet1",
+  "text_column": "text",
+  "metadata_columns": [
+    "title",
+    "number",
+    "pagina"
+  ],
+  "model": "text-embedding-3-small",
+  "embedding_dtype": "float16",
+  "dimensions": 1536,
+  "generated_at": "2026-04-17T15:01:19Z",
+  "normalization": "l2",
+  "source_mtime": "2026-04-07T00:00:05.000Z",
+  "source_size": 2381569,
+  "recommended_min_score": 0.6,
+  "score_calibration": {
+    "version": 1,
+    "method": "random_pair_p99_plus_margin",
+    "margin": 0.02,
+    "seed": 0,
+    "samplePairs": 5000,
+    "rows": 26544,
+    "meanSimilarity": 0.4026912450790405,
+    "p95Similarity": 0.5224090218544006,
+    "p99Similarity": 0.5767810940742493,
+    "p999Similarity": 0.655829906463623,
+    "maxSimilarity": 0.7739584445953369,
+    "calibratedAt": "2026-04-17T15:01:19Z"
+  },
+  "rebuild_basis": "source_file",
+  "chunking": {
+    "version": 1,
+    "strategy": "structural_sentence_rechunk",
+    "targetChars": 280,
+    "maxChars": 420,
+    "minChars": 110,
+    "rebuiltFromRows": 25187
+  }
+}

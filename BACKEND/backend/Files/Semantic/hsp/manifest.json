@@ -1,0 +1,44 @@
+{
+  "index_label": "HSP",
+  "source_file": "backend/Files/Lexical/HSP.xlsx",
+  "source_rows": 6965,
+  "indexed_rows": 9974,
+  "sheet_name": "Sheet1",
+  "text_column": "text",
+  "metadata_columns": [
+    "title",
+    "number",
+    "pagina"
+  ],
+  "model": "text-embedding-3-small",
+  "embedding_dtype": "float16",
+  "dimensions": 1536,
+  "generated_at": "2026-04-17T15:25:24Z",
+  "normalization": "l2",
+  "source_mtime": "2026-04-07T00:11:07.000Z",
+  "source_size": 1112592,
+  "recommended_min_score": 0.68,
+  "score_calibration": {
+    "version": 1,
+    "method": "random_pair_p99_plus_margin",
+    "margin": 0.02,
+    "seed": 0,
+    "samplePairs": 5000,
+    "rows": 9974,
+    "meanSimilarity": 0.4410279393196106,
+    "p95Similarity": 0.589631974697113,
+    "p99Similarity": 0.6566682457923889,
+    "p999Similarity": 0.7366546988487244,
+    "maxSimilarity": 0.8129770755767822,
+    "calibratedAt": "2026-04-17T15:25:24Z"
+  },
+  "rebuild_basis": "source_file",
+  "chunking": {
+    "version": 1,
+    "strategy": "structural_sentence_rechunk",
+    "targetChars": 280,
+    "maxChars": 420,
+    "minChars": 110,
+    "rebuiltFromRows": 6965
+  }
+}

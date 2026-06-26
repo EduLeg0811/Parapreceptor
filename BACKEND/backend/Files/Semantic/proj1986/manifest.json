@@ -1,0 +1,41 @@
+{
+  "index_label": "PROJ1986",
+  "source_file": "backend/Files/Source/proj1986.json",
+  "source_rows": 5049,
+  "indexed_rows": 10051,
+  "sheet_name": "Sheet1",
+  "text_column": "text",
+  "metadata_columns": [
+    "title",
+    "paragraph_number"
+  ],
+  "model": "text-embedding-3-small",
+  "embedding_dtype": "float16",
+  "dimensions": 1536,
+  "generated_at": "2026-06-05T16:40:14Z",
+  "normalization": "l2",
+  "recommended_min_score": 0.69,
+  "score_calibration": {
+    "version": 1,
+    "method": "random_pair_p99_plus_margin",
+    "margin": 0.02,
+    "seed": 0,
+    "samplePairs": 5000,
+    "rows": 10051,
+    "meanSimilarity": 0.43895888328552246,
+    "p95Similarity": 0.5997797846794128,
+    "p99Similarity": 0.6613010764122009,
+    "p999Similarity": 0.7195695638656616,
+    "maxSimilarity": 0.7399598360061646,
+    "calibratedAt": "2026-06-05T16:40:14Z"
+  },
+  "rebuild_basis": "source_json",
+  "chunking": {
+    "version": 1,
+    "strategy": "structural_sentence_rechunk",
+    "targetChars": 280,
+    "maxChars": 420,
+    "minChars": 110,
+    "rebuiltFromRows": 5109
+  }
+}

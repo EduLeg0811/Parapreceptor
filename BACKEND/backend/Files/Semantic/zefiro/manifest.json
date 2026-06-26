@@ -1,0 +1,41 @@
+{
+  "index_label": "ZEFIRO",
+  "source_file": "backend/Files/Source/zefiro.json",
+  "source_rows": 1076,
+  "indexed_rows": 1482,
+  "sheet_name": "Sheet1",
+  "text_column": "text",
+  "metadata_columns": [
+    "title",
+    "paragraph_number"
+  ],
+  "model": "text-embedding-3-small",
+  "embedding_dtype": "float16",
+  "dimensions": 1536,
+  "generated_at": "2026-06-05T13:49:47Z",
+  "normalization": "l2",
+  "recommended_min_score": 0.85,
+  "score_calibration": {
+    "version": 1,
+    "method": "random_pair_p99_plus_margin",
+    "margin": 0.02,
+    "seed": 0,
+    "samplePairs": 2963,
+    "rows": 1482,
+    "meanSimilarity": 0.5957782864570618,
+    "p95Similarity": 0.738412082195282,
+    "p99Similarity": 0.8224180936813354,
+    "p999Similarity": 0.8645073771476746,
+    "maxSimilarity": 0.8811457753181458,
+    "calibratedAt": "2026-06-05T13:49:47Z"
+  },
+  "rebuild_basis": "source_json",
+  "chunking": {
+    "version": 1,
+    "strategy": "structural_sentence_rechunk",
+    "targetChars": 280,
+    "maxChars": 420,
+    "minChars": 110,
+    "rebuiltFromRows": 1076
+  }
+}

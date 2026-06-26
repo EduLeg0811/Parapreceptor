@@ -1,0 +1,47 @@
+{
+  "index_label": "QUEST",
+  "source_file": "backend/Files/Lexical/QUEST.xlsx",
+  "source_rows": 3800,
+  "indexed_rows": 8229,
+  "sheet_name": "Final Clean ",
+  "text_column": "text",
+  "metadata_columns": [
+    "title",
+    "date",
+    "number",
+    "quest",
+    "answer",
+    "author"
+  ],
+  "model": "text-embedding-3-small",
+  "embedding_dtype": "float16",
+  "dimensions": 1536,
+  "generated_at": "2026-04-17T15:58:11Z",
+  "normalization": "l2",
+  "source_mtime": "2026-03-25T19:38:26.000Z",
+  "source_size": 1066039,
+  "recommended_min_score": 0.62,
+  "score_calibration": {
+    "version": 1,
+    "method": "random_pair_p99_plus_margin",
+    "margin": 0.02,
+    "seed": 0,
+    "samplePairs": 5000,
+    "rows": 8229,
+    "meanSimilarity": 0.4204782247543335,
+    "p95Similarity": 0.5478578805923462,
+    "p99Similarity": 0.593995988368988,
+    "p999Similarity": 0.6662861704826355,
+    "maxSimilarity": 0.7120085954666138,
+    "calibratedAt": "2026-04-17T15:58:11Z"
+  },
+  "rebuild_basis": "source_file",
+  "chunking": {
+    "version": 1,
+    "strategy": "structural_sentence_rechunk",
+    "targetChars": 280,
+    "maxChars": 420,
+    "minChars": 110,
+    "rebuiltFromRows": 3800
+  }
+}

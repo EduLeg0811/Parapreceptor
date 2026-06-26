@@ -1,0 +1,45 @@
+{
+  "index_label": "CCG",
+  "source_file": "backend/Files/Lexical/CCG.xlsx",
+  "source_rows": 1980,
+  "indexed_rows": 1980,
+  "sheet_name": "Sheet1",
+  "text_column": "text",
+  "metadata_columns": [
+    "title",
+    "folha",
+    "number",
+    "pagina"
+  ],
+  "model": "text-embedding-3-small",
+  "embedding_dtype": "float16",
+  "dimensions": 1536,
+  "generated_at": "2026-04-17T15:55:06Z",
+  "normalization": "l2",
+  "source_mtime": "2026-04-06T23:10:28.000Z",
+  "source_size": 170141,
+  "recommended_min_score": 0.78,
+  "score_calibration": {
+    "version": 1,
+    "method": "random_pair_p99_plus_margin",
+    "margin": 0.02,
+    "seed": 0,
+    "samplePairs": 3959,
+    "rows": 1980,
+    "meanSimilarity": 0.5501338243484497,
+    "p95Similarity": 0.6986033916473389,
+    "p99Similarity": 0.7567250728607178,
+    "p999Similarity": 0.8091274499893188,
+    "maxSimilarity": 0.8355887532234192,
+    "calibratedAt": "2026-04-17T15:55:06Z"
+  },
+  "rebuild_basis": "source_file",
+  "chunking": {
+    "version": 1,
+    "strategy": "structural_sentence_rechunk",
+    "targetChars": 280,
+    "maxChars": 420,
+    "minChars": 110,
+    "rebuiltFromRows": 1980
+  }
+}

@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+python-multipart
+python-dotenv
+requests
+beautifulsoup4
+pdf2docx
+python-docx
+pandas
+numpy
+openpyxl
+streamlit
+rapidfuzz

@@ -1,0 +1,44 @@
+{
+  "index_label": "DUPLA",
+  "source_file": "backend/Files/Lexical/DUPLA.xlsx",
+  "source_rows": 783,
+  "indexed_rows": 1093,
+  "sheet_name": "Capítulos",
+  "text_column": "text",
+  "metadata_columns": [
+    "title",
+    "number",
+    "pagina"
+  ],
+  "model": "text-embedding-3-small",
+  "embedding_dtype": "float16",
+  "dimensions": 1536,
+  "generated_at": "2026-04-17T15:59:49Z",
+  "normalization": "l2",
+  "source_mtime": "2026-04-06T23:11:53.000Z",
+  "source_size": 125995,
+  "recommended_min_score": 0.83,
+  "score_calibration": {
+    "version": 1,
+    "method": "random_pair_p99_plus_margin",
+    "margin": 0.02,
+    "seed": 0,
+    "samplePairs": 2184,
+    "rows": 1093,
+    "meanSimilarity": 0.654653012752533,
+    "p95Similarity": 0.7671774625778198,
+    "p99Similarity": 0.8072777390480042,
+    "p999Similarity": 0.8477609753608704,
+    "maxSimilarity": 0.9038538336753845,
+    "calibratedAt": "2026-04-17T15:59:49Z"
+  },
+  "rebuild_basis": "source_file",
+  "chunking": {
+    "version": 1,
+    "strategy": "structural_sentence_rechunk",
+    "targetChars": 280,
+    "maxChars": 420,
+    "minChars": 110,
+    "rebuiltFromRows": 783
+  }
+}

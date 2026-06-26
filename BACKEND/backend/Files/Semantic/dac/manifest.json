@@ -1,0 +1,45 @@
+{
+  "index_label": "DAC",
+  "source_file": "backend/Files/Lexical/DAC.xlsx",
+  "source_rows": 4804,
+  "indexed_rows": 9228,
+  "sheet_name": "Sheet1",
+  "text_column": "text",
+  "metadata_columns": [
+    "title",
+    "argumento",
+    "number",
+    "pagina"
+  ],
+  "model": "text-embedding-3-small",
+  "embedding_dtype": "float16",
+  "dimensions": 1536,
+  "generated_at": "2026-04-17T15:31:48Z",
+  "normalization": "l2",
+  "source_mtime": "2026-04-06T23:49:12.000Z",
+  "source_size": 1140667,
+  "recommended_min_score": 0.72,
+  "score_calibration": {
+    "version": 1,
+    "method": "random_pair_p99_plus_margin",
+    "margin": 0.02,
+    "seed": 0,
+    "samplePairs": 5000,
+    "rows": 9228,
+    "meanSimilarity": 0.5250225067138672,
+    "p95Similarity": 0.6458499431610107,
+    "p99Similarity": 0.690159261226654,
+    "p999Similarity": 0.7526329159736633,
+    "maxSimilarity": 0.8267611861228943,
+    "calibratedAt": "2026-04-17T15:31:48Z"
+  },
+  "rebuild_basis": "source_file",
+  "chunking": {
+    "version": 1,
+    "strategy": "structural_sentence_rechunk",
+    "targetChars": 280,
+    "maxChars": 420,
+    "minChars": 110,
+    "rebuiltFromRows": 4804
+  }
+}
