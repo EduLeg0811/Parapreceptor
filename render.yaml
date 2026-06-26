@@ -29,13 +29,13 @@ services:
       - key: VITE_API_BASE_URL
         sync: false
       - key: VITE_OPENAI_VECTOR_STORES
-        sync: false
+        value: vs_6912908250e4819197e23fe725e04fae
       - key: VITE_OPENAI_VECTOR_STORE_LO
-        sync: false
+        value: vs_698be4e07c748191b834905ebc7a7da3
       - key: VITE_OPENAI_VECTOR_STORE_TRANSLATE_RAG
-        sync: false
+        value: vs_69931da436e48191b43453e845e63bd3
       - key: VITE_OPENAI_VECTOR_STORE_EDUNOTES
-        sync: false
+        value: vs_68f195fdeda08191815ec795ba1f57ba
       - key: VITE_OPENAI_VECTOR_STORE_ECWV
-        sync: false
+        value: vs_699d09de9ca48191b63fbbd4d195a696
 
