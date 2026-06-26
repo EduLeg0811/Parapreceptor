@@ -9,7 +9,7 @@ import { Switch } from "@/components/ui/switch";
 import { primaryActionButtonClass } from "@/styles/buttonStyles";
 import { panelsTopMenuBarBgClass } from "@/styles/backgroundColors";
 import type { SemanticIndexOption } from "@/features/ghost-writer/types";
-import SourceRadioList from "@/features/ghost-writer/components/common/SourceRadioList";
+import SourceSelect from "@/features/ghost-writer/components/common/SourceSelect";
 
 interface SemanticSearchPanelProps {
   title: string;
@@ -106,16 +106,15 @@ const SemanticSearchPanel = ({
 
         <div className="space-y-2">
           <Label className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Base Vetorial</Label>
-          <SourceRadioList
-            name="semantic-search-index"
+          <SourceSelect
             items={availableIndexes.map((item) => ({
               id: item.id,
               label: item.label,
             }))}
             selectedId={selectedIndexId}
             isLoading={isLoadingIndexes}
-            loadingLabel="Carregando indices semanticos disponiveis."
-            emptyLabel="Nenhum indice semantico disponivel."
+            loadingLabel="Carregando índices semânticos disponíveis."
+            emptyLabel="Nenhum índice semântico disponível."
             onChange={onSelectedIndexChange}
           />
           {selectedIndex ? (

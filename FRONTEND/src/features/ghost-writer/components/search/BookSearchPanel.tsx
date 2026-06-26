@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Input } from "@/components/ui/input";
 import { primaryActionButtonClass } from "@/styles/buttonStyles";
 import { panelsTopMenuBarBgClass } from "@/styles/backgroundColors";
-import SourceRadioList from "@/features/ghost-writer/components/common/SourceRadioList";
+import SourceSelect from "@/features/ghost-writer/components/common/SourceSelect";
 import type { LexicalBookOption } from "@/features/ghost-writer/types";
 
 interface BookSearchPanelProps {
@@ -67,14 +67,13 @@ const BookSearchPanel = ({
         {showPanelChrome ? <Separator /> : null}
         <div className="space-y-2">
           <Label className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">Livro</Label>
-          <SourceRadioList
-            name="book-search"
+          <SourceSelect
             items={bookOptions.map((option) => ({
               id: option.id,
               label: option.label,
             }))}
             selectedId={selectedBook}
-            emptyLabel="Nenhum livro disponivel."
+            emptyLabel="Nenhum livro disponível."
             onChange={onSelectBook}
           />
         </div>
