@@ -233,6 +233,8 @@ def _sanitize_rag_context(rag_context: Any) -> dict[str, Any] | None:
 PORT = int(os.getenv("PORT") or os.getenv("SERVER_PORT", "8787"))
 frontend_origin = (os.getenv("FRONTEND_ORIGIN") or "http://localhost:5173").strip()
 cors_origins = ["*"] if frontend_origin == "*" else [origin.strip() for origin in frontend_origin.split(",") if origin.strip()]
+if "https://lexicons-frontend.onrender.com" not in cors_origins and "*" not in cors_origins:
+    cors_origins.append("https://lexicons-frontend.onrender.com")
 pdf2docx_python_cmd = (os.getenv("PDF2DOCX_PYTHON_CMD") or "python").strip()
 backend_python_cmd = (os.getenv("BACKEND_PYTHON_CMD") or pdf2docx_python_cmd or "python").strip()
 file_retention_hours = int(os.getenv("FILE_RETENTION_HOURS") or "24")
