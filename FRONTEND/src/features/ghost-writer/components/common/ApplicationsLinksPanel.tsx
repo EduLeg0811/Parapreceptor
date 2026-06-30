@@ -18,17 +18,17 @@ const ApplicationsLinksPanel = ({ isLoading, onRunRandomPensata }: ApplicationsL
         onClick={onRunRandomPensata}
         disabled={isLoading}
       >
-        <img src="/LO.png" alt="LO" className="h-14 w-16 shrink-0 object-contain bg-white" />
+        <img src="/LO_New.png" alt="LO" className="h-14 w-16 shrink-0 object-contain bg-white" />
         <span className="min-w-0 flex-1 text-left">
           <span className="text-sm font-semibold tracking-wide text-orange-600 shadow-lg">Pensata do Dia</span>
           <p className="text-[11px] leading-tight text-blue-600 shadow-lg">Bibliomancia Digital</p>
         </span>
       </Button>
 
-      <a href="https://cons-ia.org/" target="_blank" rel="noopener noreferrer" className={linkClassName}>
+      <a href="https://cons-ia-f8wf.onrender.com/gallery.html" target="_blank" rel="noopener noreferrer" className={linkClassName}>
         <div className="flex items-center justify-between gap-2">
-          <div className="flex items-center gap-4">
-            <img src="/cons-ia.png" alt="Cons-IA" className="h-14 w-14 rounded-md" />
+          <div className="flex items-center gap-6">
+            <img src="/cons-ia.png" alt="Cons-IA" className="h-12 w-12 rounded-md" />
             <span className="min-w-0 flex-1 text-left">
               <span className="text-sm font-semibold tracking-wide text-orange-600 shadow-lg">Cons-IA</span>
               <p className="text-[11px] leading-tight text-blue-600 shadow-lg">Toolbox de IA da Conscienciologia</p>
@@ -38,26 +38,52 @@ const ApplicationsLinksPanel = ({ isLoading, onRunRandomPensata }: ApplicationsL
         </div>
       </a>
 
-      <a href="https://verbetograma.streamlit.app/" target="_blank" rel="noopener noreferrer" className={linkClassName}>
+      <a href="https://verbetograma.onrender.com/" target="_blank" rel="noopener noreferrer" className={linkClassName}>
         <div className="flex items-center justify-between gap-2">
           <div className="flex items-center gap-3">
-            <img src="/DictLookUp.png" alt="Dicionários" className="h-14 w-16 rounded-md object-contain" />
+            <img src="/Verbetogram.png" alt="Revisão de Verbetes" className="h-14 w-16 rounded-md object-contain" />
             <span className="min-w-0 flex-1 text-left">
               <span className="text-sm font-semibold tracking-wide text-orange-600 shadow-lg">Verbetograma</span>
-              <p className="text-[11px] leading-tight text-blue-600 shadow-lg">Revisão verbetográfica</p>
+              <p className="text-[11px] leading-tight text-blue-600 shadow-lg">Auditoria verbetográfica</p>
             </span>
           </div>
           <ExternalLink className="h-4 w-4 shrink-0 opacity-90 transition group-hover:translate-x-0.5" />
         </div>
       </a>
 
-      <a href="https://lexicons-g86o.onrender.com/" target="_blank" rel="noopener noreferrer" className={linkClassName}>
+      <a href="https://lexicons-frontend.onrender.com" target="_blank" rel="noopener noreferrer" className={linkClassName}>
         <div className="flex items-center justify-between gap-2">
           <div className="flex items-center gap-3">
-            <img src="/Lexicons.png" alt="LexiCons" className="h-14 w-16 rounded-md object-contain" />
+            <img src="/Lexicons_New_noWords.png" alt="LexiCons" className="h-14 w-16 rounded-md object-contain" />
             <span className="min-w-0 flex-1 text-left">
               <span className="text-sm font-semibold tracking-wide text-orange-600 shadow-lg">LexiCons</span>
               <p className="text-[11px] leading-tight text-blue-600 shadow-lg">Dicionário Analógico e Sinônimos</p>
+            </span>
+          </div>
+          <ExternalLink className="h-4 w-4 shrink-0 opacity-90 transition group-hover:translate-x-0.5" />
+        </div>
+      </a>
+
+      <a href="https://conswiki.onrender.com/consulta" target="_blank" rel="noopener noreferrer" className={linkClassName}>
+        <div className="flex items-center justify-between gap-2">
+          <div className="flex items-center gap-3">
+            <img src="/ConsWiki-Books.png" alt="ConsWiki" className="h-14 w-16 rounded-md object-contain" />
+            <span className="min-w-0 flex-1 text-left">
+              <span className="text-sm font-semibold tracking-wide text-orange-600 shadow-lg">ConsWiki</span>
+              <p className="text-[11px] leading-tight text-blue-600 shadow-lg">Wiki LLM da Conscienciologia</p>
+            </span>
+          </div>
+          <ExternalLink className="h-4 w-4 shrink-0 opacity-90 transition group-hover:translate-x-0.5" />
+        </div>
+      </a>
+
+      <a href="https://transcreve.onrender.com/" target="_blank" rel="noopener noreferrer" className={linkClassName}>
+        <div className="flex items-center justify-between gap-2">
+          <div className="flex items-center gap-3">
+            <img src="/TranScriptor3.png" alt="TranScriptor" className="h-14 w-16 rounded-md object-contain" />
+            <span className="min-w-0 flex-1 text-left">
+              <span className="text-sm font-semibold tracking-wide text-orange-600 shadow-lg">TranScriptor</span>
+              <p className="text-[11px] leading-tight text-blue-600 shadow-lg">Transcrição Áudio e Vídeo</p>
             </span>
           </div>
           <ExternalLink className="h-4 w-4 shrink-0 opacity-90 transition group-hover:translate-x-0.5" />
